@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#gameboard {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  border: 1px solid rgb(139, 0, 0);
+}
+
+.cell {
+  border: 1px solid rgb(139, 0, 0);
+  font-size: 140px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0;
+}
