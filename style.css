@@ -2,27 +2,90 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  background-color: #283C4F;
+  color:white;
+}
+
+.game-title-header {
+  display:flex;
+  justify-content: center;
+  align-items:flex-start;
+  margin-bottom:80px;
+  margin-top:20px;
+}
+
+.title {
+  font-family: 'Press Start 2P', cursive;
 }
 
 #gameboard {
   display: grid;
-  grid-template-rows: repeat(3, 150px);
-  grid-template-columns: repeat(3, 150px);
-  border: 1px solid rgb(139, 0, 0);
+  grid-template-rows: repeat(3, 135px);
+  grid-template-columns: repeat(3, 135px);
 }
 
 .cell {
-  border: 1px solid rgb(139, 0, 0);
+  color:white;
   font-size: 140px;
   display:flex;
   justify-content: center;
   align-items: center;
+  border-right: 2px solid #009BFF;
+  border-bottom: 2px solid #009BFF;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: none;
 }
 
 .container {
-  height: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 120px 0;
+  margin-bottom:10px;
 }
+
+.result-message {
+  margin-bottom:30px;
+  display:flex;
+  justify-content: center;
+}
+
+.replay-button {
+  display: inline-block;
+  background-color: #009BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.replay-container {
+  display:flex;
+  justify-content: flex-end;
+  margin-right:30px;
+  
+}
+.replay-button:hover {
+  background-color: #33A6FF;
+}
+
+.cell:hover {
+  background-color: #405469 ;
+}
+
+.cell {
+  background-color: #283C4F;
+  transition: background-color 0.3s ease;
+}
+
